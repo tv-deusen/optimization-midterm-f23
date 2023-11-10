@@ -1,40 +1,133 @@
- \documentclass[12pt]{article}
- \usepackage[margin=1in]{geometry}
- \usepackage[all]{xy}
- 
- \usepackage{amsmath,amsthm,amssymb,color,latexsym}
- \usepackage{geometry}        
- \geometry{letterpaper}    
- \usepackage{graphicx}
- 
- \newtheorem{problem}{Problem}
- 
- \newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
- 
- 
- \begin{document}
- 	\noindent MAT 108 write here your section Spring 2018\hfill Problem Set \#\\
- 	First name Last name. (MM/DD)
- 	
- 	\hrulefill
- 	
- 	\begin{problem}
- 		Write here the text of the first homework problem.
- 	\end{problem}
- 	\begin{solution}
- 		Write here the solution of the first homework problem.
- 	\end{solution} 
- 	
- 	\begin{problem}
- 		Write here the text of the second homework problem.
- 	\end{problem}
- 	\begin{solution}
- 		Write here the solution of the second homework problem.
- 	\end{solution}
- 	
- 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 	%%%%%Continue with this pattern if there are more%%%%%%%
- 	%%%%%%%%%%%%%%%%%homework problems%%%%%%%%%%%%%%%%%%%%%%
- 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 	
- \end{document}
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}
+\usepackage{physics}
+\geometry{letterpaper}
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+
+\newenvironment{solution}[1][\textit{Solution}]{\textbf{#1. }}{$\blacksquare$}
+
+\begin{document}
+	\noindent EE5623701 Optimization Techniques and Applications\hfill Midterm Report\\
+	Tom Van Deusen \hfill 10/14/2023
+
+	\hrulefill
+
+	\begin{problem}
+    Prove that, given any set $\textit{C}$ and a point $\textit{x} \in \textit{C}$, the normal cone $N_c(X) = \{g: G^{T}x \geq g^{T}y, \forall y \in C\}$ is a convex set (C not necessarily convex)  
+  \end{problem}
+	\begin{solution}
+		Write here the solution of the first homework problem.
+	\end{solution}
+
+	\begin{problem}
+    Prove that for any set \textit{C} (convex or not), its support function $I_{C}^{*}(x) = \max_{y \in C} x^{T}y$ is a convex function.
+	\end{problem}
+	\begin{solution}
+		Write here the solution of the second homework problem.
+	\end{solution}
+
+  \begin{problem}
+    Consider a closed set defined by $C = \{(x,y) | y \geq \frac{1}{1 + x^2}\}$ where $(x,y) \in \mathbb{R}^{2}$
+    \begin{enumerate}
+      \item Is the set \it{C} convex? (Hint: you can draw the set \it{C} on the plane to explain your answer.) 
+      \item  Is the convex hull of set \it{C} also a closed set? You can also explain your answer by the plot.
+    \end{enumerate}
+    \begin{solution}
+      \begin{enumerate}
+        \item 
+        \item 
+      \end{enumerate}
+    \end{solution}
+  \end{problem}
+
+  \begin{problem}
+    Adapt the proof of log-deterainant function to show that $f(x) = tr(X^{-1})$ is convex on $\textbf{dom}f = S^{n}_{++}$
+      
+    \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    \begin{enumerate}
+      \item $f(x_1, x_2) = \frac{1}{x_{1}x_{2}}$ on $\mathbb{R}^{2}_{++}$ is convex. 
+      \item $f(x_1, x_2) = \frac{x_1}{x_{2}}$  on $\mathbb{R} \times \mathbb{R}^{2}_{++}$ is convex. 
+    \end{enumerate}
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Prove that $\log(\frac{e^x}{1 + e^x})$ on $\mathbb{R}$ is concave.
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Prove that, by applying Jensen’s inequality, an arithmetic mean is greater than or equal to its geometric mean, i.e., $(\prod_{i=1}^{n} x_{i})^{1/n} \leq \frac{1}{n}\sum_{i=1}^{n} x_{i}$ where $\textbf{x} \in \mathbb{R^{n}_{++}}$
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+  
+  \begin{problem}
+    Prove that $\frac{1}{\sqrt{n}}\lVert x \rVert_{1} \leq \lVert x \rVert_{2} \leq \lVert x \rVert_{1}$
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Show that the following function $f(x)$ is convex:\\
+    \begin{center}
+      $f(x) = x^{T}(A(x))^{-1}x$, $\textbf{dom}{f} = \{x | A(X) \succ 0\}$
+    \end{center}
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Prove that the maximum eigenvalue of a symmetric matrix is convex.
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Let $f(x) = \sum_{i=1}^{r} |x|_{[i]}$ on $\mathbb{R}^n$, where $|x|_{[i]}$ is the \it{i}-th largest component of teh absolute value of $|x|$, and $r \leq n$ is a positive number. 
+    \begin{enumerate}
+      \item Prove that $f(x)$ is convex.
+      \item Show that $f(x) = \min_{t}rt + \sum_{i=1}^{n} \max(0, |x_{i} - t|)$
+    \end{enumerate}
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    Let $f(\lambda) = \textbf{x}^{T} D(\lambda)(D(\lambda) + \textbf{I})^{-1}\textbf{x} - \textbf{1}^{T}\lambda$ on $\mathbb{R}^{n}_{+}$, where $D(\lambda)$ is a diagonal matrix and $\textbf{1}^T = [1, 1, ..., 1]$.
+    \begin{enumerate}
+      \item Prove that $f(\lambda)$ is concave.
+      \item Find the optimal value of $f(\lambda)$.
+    \end{enumerate}
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+ \begin{problem}
+   Is the function $f(x) = ln(1 + \frac{x^2}{2 \tau^{2}_{0}})$, where $\tau_{0} > 0$, convex?
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+
+  \begin{problem}
+    \begin{enumerate}
+      \item Determine whether or not $\sqrt{x_{1}x_{2}}$ is convex on $\mathbb{R}^{2}_{++}$.
+    \item Determine whether or not $g(\textbf{y}) = \max_{x \in \mathbb{R}_{++}{2}} x_{1}y_{1} + x_{2}y_{2} - \sqrt{x_{1}x_{2}}$ is convex on $\mathbb{R}^2$
+    \end{enumerate}
+  \end{problem}
+  \begin{solution}
+  \end{solution}
+\end{document}
+
