@@ -1,15 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1700121364 "report.tex" "report.pdf" "report" 1700121364 2
+["pdflatex"] 1700196645 "report.tex" "report.pdf" "report" 1700196645 0
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
@@ -27,7 +24,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1136768653 1492 86331993fe614793f5e7e755835c31c5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1136768653 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136768653 520 82a3d37183f34b6eb363a161dfc002c2 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm" 1136768653 520 d082ac03a1087bc1ec2a06e24a9f68c0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm" 1136768653 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/xypic/xyatip10.tfm" 1381187214 608 50246cc71b0635b0ba0a5c10a0bf4257 ""
@@ -112,8 +108,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1699609678 293942 f030e45b4fabcd4e74d4e85b0762a5aa ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1699615990 6477869 19f36f47a3ce90b9772716c4d5bffa46 ""
-  "report.aux" 1700121364 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "report.tex" 1700121362 6263 e6d6ff14c43dd1d62e71c61ba2701291 ""
+  "report.aux" 1700196645 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "report.tex" 1700196644 7096 2ebecca587415d20789310c3955033d2 ""
   (generated)
   "report.aux"
   "report.log"

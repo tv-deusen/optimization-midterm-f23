@@ -63,14 +63,35 @@ is not convex.
     Consider the matrix $\theta X + (1 - \theta)Y$ for $0 \leq \theta \leq 1$, which is also positive definite because \textit(X) and \textit{Y} are positive definite, so and similar to above, the eigenvalues of $(\theta X + (1 - \theta) Y)^{-1}$ are $\frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}}$.
     \\ 
     \\
-    So $\textbf{tr}(\theta X + (1 - \theta Y)) = \sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}}$, and $\theta \textbf{X^{-1}} + (1 - \theta)\textbf{Y^{-1}} = \sum_{i=1}^{n} (\theta \frac{1}{\lambda_{i}} + (1 - \theta) \frac{1}{\mu_{i}}$
+    So \\ 
+    \\
+    $\textbf{tr}(\theta X + (1 - \theta Y)) = \sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}}$,
+    \\
+    \\ 
+    and
+    \\ 
+    \\
+    $\theta \mathbf{tr}({X^{-1}}) + (1 - \theta)\mathbf{tr}({Y^{-1}}) = \sum_{i=1}^{n} (\theta \frac{1}{\lambda_{i}} + (1 - \theta) \frac{1}{\mu_{i}})$
+    \\
+    \\
+    And given that the function $g(x) = \frac{1}{x}$ is convex in $\mathbb{R}_{+}$, then for some $a, b \in \mathbb{R}_{+},\  0 \leq \theta \leq 1$,
+    \\ 
+    \\ 
+    $\frac{1}{\theta a + (1 - \theta)b} \leq \theta (\frac{1}{a}) + (1 - \theta) (\frac{1}{b})$
+    \\ 
+    \\ 
+    Applying this to the above functions, it follows that
+    \\ 
+    \\ 
+   % $\sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}} \leq \sum_{i=1}^{n} (\theta \frac{1}{\lambda_{i}} + (1 - \theta) \frac{1}{\mu_{i}}) = \sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}$
+    $\sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}} \leq \sum_{i=1}^{n} (\theta \frac{1}{\lambda_{i}} + (1 - \theta) \frac{1}{\mu_{i}})$
 
   \end{solution}
 
   \begin{problem}
     \begin{enumerate}
-      \item $f(x_1, x_2) = \frac{1}{x_{1}x_{2}}$ on $\mathbb{R}^{2}_{++}$ is convex. 
-      \item $f(x_1, x_2) = \frac{x_1}{x_{2}}$  on $\mathbb{R} \times \mathbb{R}^{2}_{++}$ is convex. 
+      \item Prove that $f(x_1, x_2) = \frac{1}{x_{1}x_{2}}$ on $\mathbb{R}^{2}_{++}$ is convex. 
+      \item Prove that $f(x_1, x_2) = \frac{x_1}{x_{2}}$  on $\mathbb{R} \times \mathbb{R}^{2}_{++}$ is convex. 
     \end{enumerate}
   \end{problem}
   \begin{solution}
