@@ -5,6 +5,7 @@
 \usepackage{amsmath,amsthm,amssymb,color,latexsym}
 \usepackage{geometry}
 \usepackage{physics}
+\usepackage{enumerate}
 \geometry{letterpaper}
 \usepackage{graphicx}
 
@@ -19,17 +20,20 @@
 	\hrulefill
 
 	\begin{problem}
-    Prove that, given any set $\textit{C}$ and a point $\textit{x} \in \textit{C}$, the normal cone $N_c(X) = \{g: G^{T}x \geq g^{T}y, \forall y \in C\}$ is a convex set (C not necessarily convex)  
+    Prove that, given any set $\textit{C}$ and a point $\textit{x} \in \textit{C}$, the normal cone $N_C(X) = \{g: G^{T}x \geq g^{T}y, \forall y \in C\}$ is a convex set (C not necessarily convex)  
   \end{problem}
 	\begin{solution}
-		Write here the solution of the first homework problem.
+    Let $g_{1}, g_{2} \in N_{C}(x)$, and since normal cones are convex cones,\\ 
+    \begin{center}
+      $(t_{1}g_{1} + t_{2}g_{2})^{T} = t_{1}g_{1}^{T}x + t_{2}g_{2}^{T}x \geq t_{1}g_{1}^{T}y + t_{2}g_{2}^{T}y = (t_{1}g_{1} + t_{2}g_{2})^{T}y, \ \forall \ t_{1}, t_{2} \geq 0$ 
+    \end{center}
 	\end{solution}
 
 	\begin{problem}
     Prove that for any set \textit{C} (convex or not), its support function $I_{C}^{*}(x) = \max_{y \in C} x^{T}y$ is a convex function.
 	\end{problem}
 	\begin{solution}
-		Write here the solution of the second homework problem.
+    For every $y \in C, x^{T}y$ is a linear function of \textit{x}, so $I^{*}_{C}$ is a pointwise supremum of a family of linear functions, therefore convex.
 	\end{solution}
 
   \begin{problem}
@@ -40,17 +44,27 @@
     \end{enumerate}
     \begin{solution}
       \begin{enumerate}
-        \item 
-        \item 
+      \item Consider the function $f(x) = \frac{1}{1 + x^{2}}$, the set $C = \textbf{epi}(f)$, i.e. $\ \forall \ y \in C, f(x) \leq y$\\ 
+        Now consider $\frac{\partial}{\partial^{2}x}f(x) = \frac{6x^{2} - 2}{(1 + x^{2})^{3}}$, which is not strictly nondecreasing, which means $f(x)$ is not convex, implying $\textbf{epi}(f)$
+is not convex.
+      \item The closure of a the convex hull \textit{H} of a closed set \textit{C} will be \textit{H} itself, making \textit{H} closed as well.
       \end{enumerate}
     \end{solution}
   \end{problem}
 
   \begin{problem}
     Adapt the proof of log-deterainant function to show that $f(x) = tr(X^{-1})$ is convex on $\textbf{dom}f = S^{n}_{++}$
-      
     \end{problem}
   \begin{solution}
+    Let $\lambda_{1}, ..., \lambda_{n}$ be eigenvalues of \textit{X} and \textit{Y} be another matrix in $S^{n}_{++}$, and its eigenvalues be $\mu_{1}, ..., \mu_{n}$.
+    Both $X^{-1}$ and $Y^{-1}$ so their eigenvalues are $ \frac{1}{\lambda{1}}, ..., \frac{1}{\lambda{n}}$, and $\frac{1}{\mu_{1}}, ..., \frac{1}{\mu_{n}}$, respectively.
+    \\ 
+    \\ 
+    Consider the matrix $\theta X + (1 - \theta)Y$ for $0 \leq \theta \leq 1$, which is also positive definite because \textit(X) and \textit{Y} are positive definite, so and similar to above, the eigenvalues of $(\theta X + (1 - \theta) Y)^{-1}$ are $\frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}}$.
+    \\ 
+    \\
+    So $\textbf{tr}(\theta X + (1 - \theta Y)) = \sum_{i=1}^{n} \frac{1}{\theta \lambda_{i} + (1 - \theta)\mu_{i}}$, and $\theta \textbf{X^{-1}} + (1 - \theta)\textbf{Y^{-1}} = \sum_{i=1}^{n} (\theta \frac{1}{\lambda_{i}} + (1 - \theta) \frac{1}{\mu_{i}}$
+
   \end{solution}
 
   \begin{problem}
@@ -99,7 +113,7 @@
     Let $f(x) = \sum_{i=1}^{r} |x|_{[i]}$ on $\mathbb{R}^n$, where $|x|_{[i]}$ is the \it{i}-th largest component of teh absolute value of $|x|$, and $r \leq n$ is a positive number. 
     \begin{enumerate}
       \item Prove that $f(x)$ is convex.
-      \item Show that $f(x) = \min_{t}rt + \sum_{i=1}^{n} \max(0, |x_{i} - t|)$
+      \item Show that $f(x) = \min_{t}(rt) + \sum_{i=1}^{n} \max(0, |x_{i} - t|)$ is convex.
     \end{enumerate}
   \end{problem}
   \begin{solution}

@@ -1,0 +1,45 @@
+To show that these two functions are equal, we need to demonstrate that they produce the same output for any given input \( x \). Let's break down each function and compare them:
+
+1) \( f(x) = \sum_{i=1}^{r} |x|_{[i]} \)
+
+2) \( g(x) = \min_{t} \left( rt + \sum_{i=1}^{n} \max(0, |x_{i}| - t) \right) \) where \( t \in \mathbb{R}^{n} \)
+
+Let's first focus on \( g(x) \):
+
+\[
+g(x) = \min_{t} \left( rt + \sum_{i=1}^{n} \max(0, |x_{i}| - t) \right)
+\]
+
+The term \( \max(0, |x_{i}| - t) \) can be written as \( |x_{i}| - t \) when \( |x_{i}| - t \geq 0 \) and 0 otherwise.
+
+Now, let's look at the expression \( |x|_{[i]} \):
+
+\[
+|x|_{[i]} = \text{the i-th largest component of the absolute value of } |x|
+\]
+
+This means that \( |x|_{[i]} \) is the i-th largest magnitude among the components of \( x \). Therefore, \( |x|_{[i]} \) is the i-th largest among \( |x_{1}|, |x_{2}|, \ldots, |x_{n}| \).
+
+Now, consider \( |x_{i}| - t \) in the expression for \( g(x) \). If we set \( t = |x_{[i]}| \), then for the i-th term in the sum, \( \max(0, |x_{i}| - t) = |x_{i}| - |x|_{[i]} \), because \( |x_{i}| - |x|_{[i]} \) is positive when \( |x_{i}| \) is the i-th largest among \( |x_{1}|, |x_{2}|, \ldots, |x_{n}| \), and 0 otherwise.
+
+Substituting this back into \( g(x) \):
+
+\[
+g(x) = \min_{t} \left( rt + \sum_{i=1}^{n} \max(0, |x_{i}| - t) \right) = \min_{t} \left( rt + \sum_{i=1}^{n} (|x_{i}| - |x|_{[i]}) \right)
+\]
+
+Now, we can simplify this further:
+
+\[
+g(x) = \min_{t} \left( rt + \sum_{i=1}^{n} |x_{i}| - \sum_{i=1}^{n} |x|_{[i]} \right)
+\]
+
+Since \( \sum_{i=1}^{n} |x_{i}| \) is a constant with respect to \( t \), minimizing \( rt + \sum_{i=1}^{n} |x_{i}| - \sum_{i=1}^{n} |x|_{[i]} \) is equivalent to minimizing \( \sum_{i=1}^{n} |x_{i}| - \sum_{i=1}^{n} |x|_{[i]} \).
+
+Therefore, we have shown that \( g(x) \) is equivalent to \( f(x) \):
+
+\[
+g(x) = \min_{t} \left( rt + \sum_{i=1}^{n} \max(0, |x_{i}| - t) \right) = \sum_{i=1}^{r} |x|_{[i]} = f(x)
+\]
+
+This establishes the equality between the two functions.
